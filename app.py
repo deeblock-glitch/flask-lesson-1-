@@ -11,6 +11,12 @@ def home():
 def base():
     return render_template("base.html")
 
+@app.route("/event")
+def event():
+    next_date ="2026-10-18"
+    return render_template("events.html", event_date=next_date)
+
+
 if __name__ == "__main__":
     app.run(debug=True)
 
