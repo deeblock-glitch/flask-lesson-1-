@@ -1,28 +1,8 @@
-welcome <br>
-<a href="{{url_for('base')}}"> base </a><br>
-<a href="{{url_for('home')}}">Home</a>
-<a href="{{url_for('event')}}">Events</a>
+{% extends "base.html" %}
 
+{% block Daniel %}Home - CoderDOjo{% endblock %}
 
-<!-- <h1>Upcoming sessions</h1>
-<p>Next session: {{event_date}}</p> -->
-
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>{%block Daniel %}CoderDojo{% endblock %}</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="{{url_for('home')}}">Home</a>
-                <a href="{{url_for('base')}}">Base</a>
-                <a href="{{url_for('event')}}">Events</a><br>
-            </nav>
-        </header>
-        <main>
-            {%block CR7 %}{% endblock %}
-        </main>
-    </body>
-</html>
-
+{%block Dee %}
+    <h1>Welcome to CoderDojo</h1>
+    <p> Free coding club for ages 7 to 17.</p>
+{% endblock %}
